@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Section 2 -->
+     <link rel="stylesheet" href="/css/horizontal-scroll.css">
+    <!-- Section 3 -->
+     <link rel="stylesheet" href="/css/section-3.css">
+    <!-- Section 4 -->
+    <link rel="stylesheet" href="/css/animation.css">
+    <!-- Section 6 -->
+     <link rel="stylesheet" href="/css/section-6.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- SCROLL LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~ -->
+    <header class="text-white">
+        <nav id="main-navbar" class="lg:h-20 h-16 w-full fixed top-0 flex justify-between items-center shadow-md px-6 lg:px-20 xl:px-40 2xl:px-60 bg-white lg:bg-black lg:bg-opacity-15 blur-backdrop-filter z-10">
+            <div class="logo">
+                <img src="/img/logo.png" class="w-36 lg:w-44">
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="lg:hidden">
+                <label>
+                    <div class="w-10 h-15 cursor-pointer flex flex-col items-end">
+                        <input id="menu-toggle" class="hidden peer" type="checkbox" />
+                        <div class="w-[50%] h-[2px] bg-[#107A71] rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"></div>
+                        <div class="w-[50%] h-[2px] bg-[#107A71] rounded-md transition-all duration-300 origin-center peer-checked:hidden"></div>
+                        <div class="w-[50%] h-[2px] bg-[#107A71] rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"></div>
+                    </div>
+                </label>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-12 font-medium">
+                <ul class="flex space-x-6 xl:space-x-10">
+                    <li><a href="#" class="hover:text-gray-300">HOME</a></li>
+                    <li><a href="#" class="hover:text-gray-300">SERVICES</a></li>
+                    <li><a href="#" class="hover:text-gray-300">PRODUCTS</a></li>
+                    <li><a href="#" class="hover:text-gray-300">CAREERS</a></li>
+                    <li><a href="#" class="hover:text-gray-300">CONTACT US</a></li>
+                </ul>
+                <div class="inquire bg-[#107A71] text-white py-2 px-4 xl:py-2.5 xl:px-5 rounded-lg font-semibold">
+                    <p>INQUIRE NOW</p>
+                </div>
+            </div>
+            <!-- Mobile Menu --> 
+            <div id="mobile-menu" class="hidden lg:hidden absolute top-[4rem] right-0 left-0 bg-[#1a574fec] shadow-md">
+                <nav class="space-y-4 md:px-14 px-8 py-8 flex flex-col justify-center text-center ">
+                    <a href="#" class="hover:text-[#FAA045] hover:text-lg">Home</a>
+                    <a href="#" class="hover:text-[#FAA045] hover:text-lg">Services</a>
+                    <a href="#" class="hover:text-[#FAA045] hover:text-lg">Products</a>
+                    <a href="#" class="hover:text-[#FAA045] hover:text-lg">Career</a>
+                    <a href="#" class="hover:text-[#FAA045] hover:text-lg">Contact Us</a>
+                    <a href="#" class="block rounded bg-[#FAA045] hover:bg-[#ffffff] hover:text-[#1e1e1e] px-3 py-2 mt-28">INQUIRE NOW</a>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div>
+            <div class="ParallaxVideo h-screen">
+                <video autoplay muted loop>
+                    <source src="/img/f-video.mp4" type="video/mp4" class="hero-video">
+                </video>
+                <div class="h-screen flex justify-center items-center text-white font-semibold text-[120px]">
+                    <p class="border px-20">HERO SECTION</p>
+                </div>
+            </div>
+            <!-- Content -->
+            <div>
+                <!-- Hero C2 -->
+                <div class="h-screen flex justify-center items-center text-white font-semibold text-[80px]">
+                    <p class="border px-20">ONE</p>
+                </div>
+        
+                <!-- Hero C3 -->
+                <div class="h-screen flex justify-center items-center text-white font-semibold text-[80px]">
+                    <p class="border px-20">TWO</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Section 2 -->
+
+        <!-- <div id="particles-js" class="h-screen flex flex-col justify-center items-center text-4xl md:text-5xl lg:text-6xl text-center text-[#107A71] bg-white font-bold tracking-wide" style="position: scro !important; z-index: -1; top: 0; left:0;">
+            <div class="absolute">
+                <p class="leading-tight lg:leading-normal px-6 md:px-28 xl:px-72">Humanizing the Workplace: Maximizing Potential</p>
+            </div>
+        </div> -->
+
+        <!-- Horizontal Scroll Section -->
+        <div class="scroll-container bg-white">
+            <div id="particles-js" class="h-screen bg-white " >
+                <div class="absolute flex">
+                    <div class="scroll-panel item text-[#1e1e1e]">
+                        
+                        <div class="w-full 2xl:w-screen flex flex-col text-center justify-center">
+                            <div class="heading hidden 2xl:block text-2xl 2xl:text-8xl font-bold uppercase py-7 tracking-wide">
+                                <div class="mx-7 px-32">
+                                    <p class="mb-5 2xl:mb-0">Empower Your <span class="text-[#107A71]">People</span>, Elevate Your <span class="bg-[#FAA045] text-white px-4 sm:px-6 leading-relaxed    ">Business</span></p>
+                                    <!-- <p class="mb-5">Empower Your</p>
+                                    <p class="mb-5"> <span class="text-[#107A71]">People</span>,</p>
+                                    <p class="mb-5">Elevate Your</p>
+                                    <p class="w-fit px-5 pb-2 pt-4 text-white bg-[#FAA045]">Business</p> -->
+                                </div>
+                            </div>
+                            <div class="heading block 2xl:hidden text-4xl lg:text-5xl font-bold uppercase text-center sm:text-left md:border-l-4 border-[#107A71] py-2 tracking-wide">
+                                <div class="flex flex-col md:flex-row items-center justify-center mx-7 leading-snug md:leading-relaxed">
+                                    <p class="mb-5 2xl:mb-0">Empower Your <span class="text-[#107A71]">People</span>, Elevate Your <span class="bg-[#FAA045] text-white px-4 sm:px-6 leading-relaxed    ">Business</span></p>
+                                </div>
+                            </div>
+                            
+                            <p class="sebheading w-screen px-96 text-center text-[#787878] text-lg md:text-2xl tracking-wide">Discover a seamless HR solution designed to streamline your processes and drive success in a dynamic, ever-evolving business landscape.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Timeline -->
+                    <!-- <div class="scroll-panel w-[120%] text-left item text-[#1e1e1e]">
+                        
+                    </div> -->
+                    <!-- Timeline Section -->
+                    <div class="scroll-panel w-[120%] text-left item text-[#1e1e1e]" id="timeline">
+                        <h2 class="text-4xl font-bold mb-4">Timeline</h2>
+                        <div class="timeline-item">
+                            <p>Item 1: 2021 - Company Founded</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p>Item 2: 2022 - Launched First Product</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p>Item 3: 2023 - Expansion to New Markets</p>
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="h-screen bg-white">
+            d
+        </div> -->
+
+        <!-- Section 3 -->
+        <div id="main-loop">
+            <div id="page-loop" class="h-52 flex items-center bg-white">   
+                <div id="loop" class="flex absolute text-[100px]">
+                    <h1><b> HUMANIZING</b> THE <b><i>WORKPLACE</i></b> <span>TO</span> UNLOCK MAXIMUM <span><i>POTENCIAL.</i></span></h1>
+                    <h1><b> HUMANIZING</b> THE <b><i>WORKPLACE</i></b> <span>TO</span> UNLOCK MAXIMUM <span><i>POTENCIAL.</i></span></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="-mt-14">
+            <div class="loading"></div>
+
+            <div class="carousel">
+                <div class="list">
+                    <div class="item" style="background-image: url(/img/HRSystemIntegration.png);">
+                        <div class="content w-full">
+                            <div class="title">HR System</div>
+                            <div class="name">Integration</div>
+                            <div class="des">Easy manage employee files like 201 files with our Humano HRIS.</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item" style="background-image: url(/img/Timekeeping.png);">
+                        <div class="content">
+                            <div class="title text-lg">Time-</div>
+                            <div class="name">keeping</div>
+                            <div class="des">Track employees work hours with our multiple time tracking solutions</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item" style="background-image: url(/img/PayrollOutsourcing.png);">
+                        <div class="content">
+                            <div class="title text-lg">Payroll</div>
+                            <div class="name">Outsourcing</div>
+                            <div class="des">Elevate your business with our hassle-free payroll service, ensuring accuracy, security, and efficiency in every paycheck processed.</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(/img/HRSystemIntegration.png);">
+                        <div class="content w-full">
+                            <div class="title">HR System</div>
+                            <div class="name">Integration</div>
+                            <div class="des">Easy manage employee files like 201 files with our Humano HRIS.</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item" style="background-image: url(/img/Timekeeping.png);">
+                        <div class="content">
+                            <div class="title text-lg">Time-</div>
+                            <div class="name">keeping</div>
+                            <div class="des">Track employees work hours with our multiple time tracking solutions</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item" style="background-image: url(/img/PayrollOutsourcing.png);">
+                        <div class="content">
+                            <div class="title text-lg">Payroll</div>
+                            <div class="name">Outsourcing</div>
+                            <div class="des">Elevate your business with our hassle-free payroll service, ensuring accuracy, security, and efficiency in every paycheck processed.</div>
+                            <div class="btn">
+                                <button>Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--next prev button-->
+                <div class="arrows">
+                    <button class="prev"><</button>
+                    <button class="next">></button>
+                </div>
+    
+                <!-- time running -->
+                <div class="timeRunning"></div>
+            </div>
+        </div>
+        
+
+        <!-- Section 5 -->
+        <!-- <div class="h-screen bg-blue-300">
+
+        </div> -->
+
+        <!-- Section 6 -->
+        <div class="section-6  flex justify-center bg-white">
+            <div class="slider" style="
+                
+            ">
+                <div class="list">
+                    <div class="item" style="--position: 1">
+                        <img src="/img/sari-sari.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 2">
+                        <img src="/img/cahera.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 3">
+                        <img src="/img/sissa.png" alt="" class="h-2/5">
+                    </div>
+                    <div class="item" style="--position: 4">
+                        <img src="/img/sari-sari.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 5">
+                        <img src="/img/cahera.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 6">
+                        <img src="/img/sissa.png" alt="" class="h-2/5">
+                    </div>
+                    <div class="item" style="--position: 7">
+                        <img src="/img/sari-sari.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 8">
+                        <img src="/img/cahera.png" alt="" class="h-1/4">
+                    </div>
+                    <div class="item" style="--position: 9">
+                        <img src="/img/sissa.png" alt="" class="h-2/5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="h-screen bg-red-300">
+
+        </div>
+    </main>
+    <footer></footer>
+    
+    
+    <!-- Particle -->
+    <script src="/js/particle.js"></script>
+    <script src="/js/particle-app.js"></script>
+
+    <!-- Section 4 -->
+    <script src="/js/image-slider.js"></script>
+
+    <!-- Horizontal Scroll -->
+    <script src="/js/horizontal-scroll.js"></script>
+    <!-- <script src="/src/js/particle-animation.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Card slider -->
+      
+
+    <!-- ~~~~~~~~~~~~ SCRIPT ~~~~~~~~~~~~ -->
+    <script>
+        $('#menu-toggle').on('click', function() {
+            $('#mobile-menu').toggleClass('hidden'); // Toggle visibility
+        });
+    </script>
+
+    <!-- Navbar Change Background Color on Scroll -->
+    <script>
+        $(document).ready(function(){
+            $(window).bind('scroll', function(){
+                var gap = 790;
+                if($(window).scrollTop() > gap){
+                    $('nav').addClass('active');
+                } else {
+                    $('nav').removeClass('active');
+                }
+            })
+        })
+    </script>
+</body>
+</html>
